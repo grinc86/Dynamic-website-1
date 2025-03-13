@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light Theme */
+body.light-theme {
+  background: whitesmoke;
+  color: black;
+}
+
+body.light-theme header,
+body.light-theme footer {
+  background: darkslategray;
+  color: white;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background: black;
+  color: lightgray;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+  background: darkgray;
+  color: lightgray;
+}
+
+/* Header */
+
+header {
+  
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  background: darkslategray; /* Add a background color */
+  color: white; /* Ensure text is visible */
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* Main Content */
+.main-content {
+  padding-top: 50px; /* Adjust this value based on the header's height */
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+}
+
+.hero button {
+  padding: 0.5rem 1rem;
+  background: darkslategray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+
+.hero button:hover {
+  background: gray;
+}
+
+.features {
+  margin-top: 2rem;
+}
+
+.features h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.card p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 70vh;
+  overflow-y: auto;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.modal-content.enlarged {
+  max-width: 90%;
+  max-height: 90vh;
+}
+
+.modal-content.fullscreen {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  background: darkslategray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-actions button:hover {
+  background: gray;
+}
+
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  background: darkslategray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+
+.theme-toggle:hover {
+  background: gray;
+}
+
+/* Additional Styles */
+.p1, .p2, .about, .beta, .delta {
+  line-height: 1.6;
+  margin: 1rem 0;
+  font-family: 'Roboto', sans-serif;
+}

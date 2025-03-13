@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <!-- Header -->
+  <header>
+    <h1>Dynamic Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <section class="hero">
+      <h2>Welcome to My Dynamic Website</h2>
+      <p>Explore the interactive features and mixed themes!</p>
+      <button id="open-modal">Open Modal</button>
+    </section>
+
+    <section class="features">
+      <h2>Features</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <h3>Dynamic Content</h3>
+          <p>Content loaded dynamically for a seamless experience.</p>
+        </div>
+        <div class="card">
+          <h3>Mixed Fonts</h3>
+          <p>Creative use of fonts to enhance readability and style.</p>
+        </div>
+        <div class="card">
+          <h3>Interactive Elements</h3>
+          <p>Dropdowns, modals, and more to engage users.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic Content Section -->
+    <section id="dynamic-content">
+      <h2>Latest Blog Posts</h2>
+      <div class="post">
+        <h3>10 Tips for Better Web Development</h3>
+        <p class="date">October 10, 2024</p>
+        <p>Learn how to improve your web development skills with these 10 practical tips.</p>
+      </div>
+      <div class="post">
+        <h3>Introduction to JavaScript</h3>
+        <p class="date">December 5, 2024</p>
+        <p>JavaScript is a powerful language for building interactive websites. Here's a beginner's guide.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h2>1000-Word Essay</h2>
+      <div class="modal-body">
+        <p>
+          <!-- Insert your 1000-word essay here -->
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <!-- Repeat the above paragraph to simulate a 1000-word essay -->
+        </p>
+      </div>
+      <div class="modal-actions">
+        <button id="enlarge-modal">Enlarge</button>
+        <button id="fullscreen-modal">Fullscreen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 All rights reserved. Geita & Co.</p>
+  </footer>
+
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
